@@ -24,7 +24,7 @@ public class GameController : MonoBehaviour {
         {
             Instantiate(Aeroplane, ArraySpawnAeroplane[Random.Range(0, 2)].transform.position, new Quaternion(0, 0, 1, 1));
             Instantiate(Aeroplane, ArraySpawnAeroplane[Random.Range(2, 4)].transform.position, new Quaternion(0, 0, -1, 1));
-            yield return new WaitForSeconds(intensivity);
+            yield return new WaitForSeconds(Random.Range(1f,4f));
         }
     }
 }
